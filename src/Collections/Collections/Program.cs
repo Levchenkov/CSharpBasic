@@ -6,6 +6,7 @@ using System.Collections.Specialized;
 namespace Collections
 {
     /// <summary>
+    /// // Time: 30m
     /// Links: 
     /// 1) About collections on russian: https://blog.rc21net.ru/%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-%D0%B2-c-sharp/
     /// 2) About collections on MSDN: https://msdn.microsoft.com/en-us/library/system.collections(v=vs.110).aspx
@@ -16,10 +17,33 @@ namespace Collections
     /// </summary>
     class Program
     {
+        // Коллекция это объект, который позволяет хранить в себе набор различных элементов
+        // и позволяет обращаться к ним тем или иным способом. 
+
+        // Коллекция может обладать одним или несколькими дополнительными свойствами: 
+        // добавление элемента, 
+        // добавление нескольких элементов,
+        // замена элемента, 
+        // удаление элемента, 
+        // удаление нескольких элементов
+        // перебор элементов, 
+        // поиск, 
+        // сортировка, 
+        // фильтрация.
+
+        // Коллекции бывают следующих видов:
+        // массив, 
+        // многомерный массив, 
+        // односвязный список, 
+        // двухсвязный список,
+        // множество,
+        // ассоциативный массив (словарь), 
+
         static void Main(string[] args)
-        {
-            //defenition
+        {          
             List<object> sourceList = new List<object> { "a1", "b2", "c3", 1, 2, 3, DateTime.Now };
+
+            //.NET interface segregation
 
             #region IEnumerable and IEnumerator
 
@@ -67,8 +91,9 @@ namespace Collections
             //IList<object> list = (IList<object>)sourceList;
 
             //Console.WriteLine($"Count: {list.Count}");
-            //list.RemoveAt(6);
             //list.Add(4);
+
+            //list.RemoveAt(6);            
             ////arrayList.Clear();
             //Console.WriteLine($"Does contain 4: {list.Contains(4)}");
             //list.Insert(3, 0);
@@ -96,7 +121,9 @@ namespace Collections
             #endregion
 
             #region Array
+            // Array
 
+            //// One-dimensianal array.
             //var array = new object[] { "a1", "b2", "c3", 1, 2, 3, DateTime.Now };
             //Console.WriteLine($"Length: {array.Length}");
             //array[6] = 4;
@@ -104,6 +131,38 @@ namespace Collections
             //{
             //    Console.WriteLine(item);
             //}
+
+            //// Two-dimensional array.
+            //var array2D = new int[4, 2] 
+            //{ 
+            //    { 1, 2 }, 
+            //    { 3, 4 }, 
+            //    { 5, 6 }, 
+            //    { 7, 8 }
+            //};
+
+            //// Three-dimesional array.
+            //var array3D = new int[2, 3, 4] 
+            //{ 
+            //    { 
+            //        { 1, 2, 3, 4 }, 
+            //        { 5, 6, 7, 8 },
+            //        { 9, 10, 11, 12 }
+            //    },
+            //    { 
+            //        { 13, 14, 15, 16 }, 
+            //        { 17, 18, 19, 20 },
+            //        { 21, 22, 23, 24 }
+            //    }
+            //};
+
+            //// Jugged array
+            //var jaggedArray = new int[][]
+            //{
+            //    new int[] { 1, 3, 5, 7, 9 },
+            //    new int[] { 0, 2, 4, 6 },
+            //    new int[] { 11, 22 }
+            //};
 
             #endregion
 
@@ -177,10 +236,10 @@ namespace Collections
             //IDictionary<int, string> dictionary = sourceDictionary;
 
             //dictionary.Add(3, "c3");
-            //Console.WriteLine($"Does contains entry with key 3: {dictionary.ContainsKey(3)}");
+            //Console.WriteLine($"Does contain entry with key 3: {dictionary.ContainsKey(3)}");
 
             //dictionary.Remove(5);
-            //Console.WriteLine($"Does contains entry with key 5: {dictionary.ContainsKey(5)}");
+            //Console.WriteLine($"Does contain entry with key 5: {dictionary.ContainsKey(5)}");
 
             //Console.WriteLine($"Value with key 4: {dictionary[4]}");
             //dictionary[4] = "new d4";
@@ -276,7 +335,7 @@ namespace Collections
             //    Console.WriteLine(item);
             //}
 
-            //var sortedDictionary = new SortedDictionary<Int16, object>
+            //var sortedDictionary = new SortedDictionary<int, object>
             //{
             //    { 5, "e5" },
             //    { 2, "b2" },
