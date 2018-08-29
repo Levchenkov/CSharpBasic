@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Tasks.Lab5.Task1.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -42,7 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lab5.Task3.Program.cs" />
     <Compile Include="Lab5.Task2.Program.cs" />
+    <Compile Include="Lab5\Task1\ConsoleLogger.cs" />
     <Compile Include="Lab5\Task1\ILogger.cs" />
     <Compile Include="Lab5\Task1\IUserManager.cs" />
     <Compile Include="Lab5\Task1\IUserRepository.cs" />
@@ -53,6 +58,17 @@
     <Compile Include="Lab5\Task2\Task2.cs" />
     <Compile Include="Lab5\Task2\IQueue.cs" />
     <Compile Include="Lab5\Task3\Task3.cs" />
+    <Compile Include="Lab6.Task1.Program.cs" />
+    <Compile Include="Lab6.Task2.Program.cs" />
+    <Compile Include="Lab6\Task1\File.cs" />
+    <Compile Include="Lab6\Task1\IFile.cs" />
+    <Compile Include="Lab6\Task1\IFileReader.cs" />
+    <Compile Include="Lab6\Task1\Task1.cs" />
+    <Compile Include="Lab6\Task2\IRemoteClient.cs" />
+    <Compile Include="Lab6\Task2\IRemoteResult.cs" />
+    <Compile Include="Lab6\Task2\IRemoteService.cs" />
+    <Compile Include="Lab6\Task2\RemoteService.cs" />
+    <Compile Include="Lab6\Task2\Task2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

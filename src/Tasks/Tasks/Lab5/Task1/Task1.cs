@@ -18,5 +18,15 @@
             this.logger = logger;
             this.userRepository = userRepository;
         }
+
+        public void Login(string userName, string password)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Logout(string userName)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
