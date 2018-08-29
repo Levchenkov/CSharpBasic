@@ -47,9 +47,12 @@
     <Compile Include="Lab5\Task1\IUserManager.cs" />
     <Compile Include="Lab5\Task1\IUserRepository.cs" />
     <Compile Include="Lab5.Task1.Program.cs" />
+    <Compile Include="Lab5\Task1\Task1.cs" />
     <Compile Include="Lab5\Task1\User.cs" />
     <Compile Include="Lab5\Task1\UserRepository.cs" />
+    <Compile Include="Lab5\Task2\Task2.cs" />
     <Compile Include="Lab5\Task2\IQueue.cs" />
+    <Compile Include="Lab5\Task3\Task3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

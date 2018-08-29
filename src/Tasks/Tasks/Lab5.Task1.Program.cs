@@ -14,9 +14,9 @@ namespace Tasks.Lab5.Task1
                 new User { UserName = "Third", Password = "password"},
             };
 
-            var userRepository = new UserRepository(users);
-            var logger = new ConsoleLogger(); // todo: implement
-            var manager = new UserManager(logger, userRepository); // todo: implement
+            IUserRepository userRepository = new UserRepository(users);
+            ILogger logger = new ConsoleLogger(); // todo: implement
+            IUserManager manager = new UserManager(logger, userRepository); // todo: implement
 
             manager.Login("First", "password");
             manager.Logout("First");
