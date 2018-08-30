@@ -5,7 +5,7 @@ namespace Lab6
 {
     public class Task2
     {
-        public IRemoteClient CreateExceptionList(IRemoteService remoteService)
+        public IRemoteClient CreateRemoteClient(IRemoteService remoteService)
         {
             return new RemoteClient(remoteService);
         }

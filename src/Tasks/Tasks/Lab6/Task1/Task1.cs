@@ -6,7 +6,7 @@ namespace Lab6
 {
     public class Task1
     {
-        public IFileReader CreateHandler(IFile file)
+        public IFileReader CreateFileReader(IFile file)
         {
             return new FileReader(file);
         }
